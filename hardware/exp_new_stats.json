@@ -1,0 +1,22 @@
+{
+  "GIFT-64": {
+    "nist_monobit_p": 0.8399,
+    "entropy": 7.9985,
+    "ks_diffusion": 0.78
+  },
+  "PRINCE": {
+    "nist_monobit_p": 0.749,
+    "entropy": 7.9984,
+    "ks_diffusion": null
+  },
+  "LED-64": {
+    "nist_monobit_p": 0.5379,
+    "entropy": 7.9986,
+    "ks_diffusion": null
+  },
+  "RECTANGLE-80": {
+    "nist_monobit_p": 0.0194,
+    "entropy": 7.9986,
+    "ks_diffusion": 11.05
+  }
+}

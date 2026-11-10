@@ -1,0 +1,22 @@
+{
+  "GIFT-64": {
+    "plaintext_avalanche": 49.88,
+    "key_avalanche": 49.8,
+    "bit_balance": 50.05
+  },
+  "PRINCE": {
+    "plaintext_avalanche": 50.07,
+    "key_avalanche": 49.92,
+    "bit_balance": 49.93
+  },
+  "LED-64": {
+    "plaintext_avalanche": 50.09,
+    "key_avalanche": 49.86,
+    "bit_balance": 50.01
+  },
+  "RECTANGLE-80": {
+    "plaintext_avalanche": 50.06,
+    "key_avalanche": 50.14,
+    "bit_balance": 49.86
+  }
+}

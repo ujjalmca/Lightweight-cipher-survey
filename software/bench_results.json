@@ -1,0 +1,83 @@
+{
+ "meta": {
+  "platform": "Linux-6.18.5-fc-v18-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "n_timing": 20000,
+  "n_avalanche": 5000,
+  "reps": 5
+ },
+ "results": {
+  "PRESENT-80": {
+   "structure": "SPN",
+   "block": 64,
+   "keybits": 80,
+   "us_per_block": 298.22,
+   "kbps": 214.6,
+   "aval_pt": 49.87,
+   "aval_pt_sd": 6.19,
+   "aval_key": 49.89,
+   "aval_key_sd": 6.07,
+   "balance": 49.83
+  },
+  "SIMON64/128": {
+   "structure": "Feistel",
+   "block": 64,
+   "keybits": 128,
+   "us_per_block": 27.01,
+   "kbps": 2369.6,
+   "aval_pt": 49.87,
+   "aval_pt_sd": 6.24,
+   "aval_key": 50.43,
+   "aval_key_sd": 5.86,
+   "balance": 50.0
+  },
+  "SPECK64/128": {
+   "structure": "ARX (Feistel-like)",
+   "block": 64,
+   "keybits": 128,
+   "us_per_block": 11.55,
+   "kbps": 5542.4,
+   "aval_pt": 49.94,
+   "aval_pt_sd": 6.28,
+   "aval_key": 50.07,
+   "aval_key_sd": 6.01,
+   "balance": 49.97
+  },
+  "TEA": {
+   "structure": "Feistel (ARX)",
+   "block": 64,
+   "keybits": 128,
+   "us_per_block": 18.4,
+   "kbps": 3478.7,
+   "aval_pt": 50.2,
+   "aval_pt_sd": 6.33,
+   "aval_key": 50.31,
+   "aval_key_sd": 6.61,
+   "balance": 50.06
+  },
+  "XTEA": {
+   "structure": "Feistel (ARX)",
+   "block": 64,
+   "keybits": 128,
+   "us_per_block": 20.08,
+   "kbps": 3187.6,
+   "aval_pt": 49.88,
+   "aval_pt_sd": 6.29,
+   "aval_key": 49.55,
+   "aval_key_sd": 6.22,
+   "balance": 49.83
+  },
+  "AES-128": {
+   "structure": "SPN",
+   "block": 128,
+   "keybits": 128,
+   "us_per_block": 1.96,
+   "kbps": 65239.5,
+   "aval_pt": 50.02,
+   "aval_pt_sd": 4.41,
+   "aval_key": 49.9,
+   "aval_key_sd": 4.55,
+   "balance": 50.07
+  }
+ }
+}

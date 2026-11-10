@@ -1,0 +1,10 @@
+cipher,avr_text,avr_bss,arm_text
+present,1116,0,336
+simon,596,0,144
+speck,522,0,98
+tea,360,0,80
+xtea,376,0,84
+gift,868,0,412
+prince,2070,0,680
+led,1268,0,580
+rect,2327,0,497

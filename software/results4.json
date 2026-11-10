@@ -1,0 +1,19 @@
+{
+ "correlation": {
+  "plain": {
+   "h": 0.9751,
+   "v": 0.964,
+   "d": 0.9604
+  },
+  "cbc": {
+   "h": -0.0104,
+   "v": -0.0151,
+   "d": 0.0082
+  }
+ },
+ "key_sensitivity": {
+  "pixels_differing_pct": 99.55,
+  "mean_abs_intensity_diff": 85.29,
+  "key_bits_changed": 1
+ }
+}

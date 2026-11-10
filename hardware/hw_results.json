@@ -1,0 +1,65 @@
+{
+  "PRESENT-80": {
+    "avr_text": 1116,
+    "avr_bss": 0,
+    "arm_text": 336,
+    "avr_cyc_per_block": 1050398,
+    "avr_cyc_per_byte": 131299
+  },
+  "SIMON64/128": {
+    "avr_text": 596,
+    "avr_bss": 0,
+    "arm_text": 144,
+    "avr_cyc_per_block": 13727,
+    "avr_cyc_per_byte": 1715
+  },
+  "SPECK64/128": {
+    "avr_text": 522,
+    "avr_bss": 0,
+    "arm_text": 98,
+    "avr_cyc_per_block": 8405,
+    "avr_cyc_per_byte": 1050
+  },
+  "TEA": {
+    "avr_text": 360,
+    "avr_bss": 0,
+    "arm_text": 80,
+    "avr_cyc_per_block": 9047,
+    "avr_cyc_per_byte": 1130
+  },
+  "XTEA": {
+    "avr_text": 376,
+    "avr_bss": 0,
+    "arm_text": 84,
+    "avr_cyc_per_block": 11191,
+    "avr_cyc_per_byte": 1398
+  },
+  "GIFT-64": {
+    "avr_text": 868,
+    "avr_bss": 0,
+    "arm_text": 412,
+    "avr_cyc_per_block": 154386,
+    "avr_cyc_per_byte": 19298
+  },
+  "PRINCE": {
+    "avr_text": 2070,
+    "avr_bss": 0,
+    "arm_text": 680,
+    "avr_cyc_per_block": 119742,
+    "avr_cyc_per_byte": 14967
+  },
+  "LED-64": {
+    "avr_text": 1268,
+    "avr_bss": 0,
+    "arm_text": 580,
+    "avr_cyc_per_block": 255882,
+    "avr_cyc_per_byte": 31985
+  },
+  "RECTANGLE-80": {
+    "avr_text": 2327,
+    "avr_bss": 0,
+    "arm_text": 497,
+    "avr_cyc_per_block": 55782,
+    "avr_cyc_per_byte": 6972
+  }
+}
