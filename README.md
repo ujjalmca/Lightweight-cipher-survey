@@ -67,8 +67,22 @@ arm-none-eabi-gcc -Os -mcpu=cortex-m0plus -mthumb -c present.c && arm-none-eabi-
 ```
 
 `hardware/simavr/` holds the firmware and host program used for the cycle counts on the
-simulated ATmega328P (`gcc host.c -o host -lsimavr`). Each firmware runs 100 encryptions
-between two port markers and the host reads the cycle counter difference.
+simulated ATmega328P. Each firmware runs 100 encryptions between two port markers and the
+host reads the cycle counter difference.
+
+`hardware/reproduce_hardware.py` rebuilds all of this in one step and compares the outcome
+with the stored values:
+
+```
+sudo apt-get install gcc-avr avr-libc gcc-arm-none-eabi simavr libsimavr-dev libelf-dev
+cd hardware && python3 reproduce_hardware.py
+```
+
+The stored figures were obtained with avr-gcc 7.3.0 and arm-none-eabi-gcc 13.2.1. Code size
+depends on the compiler version, so other versions may give slightly different byte counts.
+
+`reproduce_results.ipynb` in the repository root runs the tests, every experiment script and
+the hardware rebuild, and reports which values match the stored results.
 
 ## Scope and limits
 

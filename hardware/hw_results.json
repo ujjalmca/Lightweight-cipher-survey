@@ -3,8 +3,8 @@
     "avr_text": 1116,
     "avr_bss": 0,
     "arm_text": 336,
-    "avr_cyc_per_block": 1050398,
-    "avr_cyc_per_byte": 131299
+    "avr_cyc_per_block": 1050404,
+    "avr_cyc_per_byte": 131300
   },
   "SIMON64/128": {
     "avr_text": 596,

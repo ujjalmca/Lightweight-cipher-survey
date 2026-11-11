@@ -2,7 +2,7 @@
 1. Empirical max differential probability decay over rounds (PRESENT, SPECK, SIMON)
 2. Minimum active S-box count for PRESENT via exact DDT-graph shortest path (branch-and-bound)
 3. One-sample statistical test of avalanche vs ideal 0.5 (95% CI, z-test)
-4. NIST battery extended with a CONTROL bad generator (LCG) to prove the tests can fail
+4. NIST battery extended with a CONTROL biased source to show that the tests can fail
 5. Linear-hull / correlation decay sample for SPECK
 All computed or measured; nothing hand-set."""
 import json, random, math, itertools
@@ -158,20 +158,17 @@ def runs_test(e):
 def block_freq(e, M=128):
     N=len(e)//M; pi=e[:N*M].reshape(N,M).mean(axis=1)
     return gammaincc(N/2, 4*M*np.sum((pi-0.5)**2)/2)
-# bad generator: 16-bit LCG, take low bit (highly non-random low bits)
-def lcg_stream(nbits=1_000_000):
-    x=12345; arr=np.zeros(nbits,dtype=np.uint8)
-    for i in range(nbits):
-        x=(1103515245*x+12345)&0xFFFF
-        arr[i]=(x>>1)&1   # low bits of LCG are notoriously bad
-    return arr
-bad=lcg_stream()
+# control: a biased Bernoulli source, P[bit = 1] = 0.52, fixed seed
+def biased_stream(nbits=1_000_000, p_one=0.52, seed=20260):
+    rng = np.random.RandomState(seed)
+    return (rng.random_sample(nbits) < p_one).astype(np.uint8)
+bad=biased_stream()
 out['nist_control'] = dict(
-    generator='16-bit LCG low bit',
+    generator='biased Bernoulli source (P[1]=0.52)',
     monobit=round(float(monobit(bad)),4),
     block_freq=round(float(block_freq(bad)),4),
     runs=round(float(runs_test(bad)),4))
-print('NIST control (bad LCG):', out['nist_control'])
+print('NIST control (biased source):', out['nist_control'])
 
 json.dump(out, open('results3.json','w'), indent=1)
 print('saved results3.json')

@@ -1,5 +1,5 @@
 cipher,total_cycles_100blk,cycles_per_block,cycles_per_byte
-present,105039830,1050398,131299
+present,105040448,1050404,131300
 simon,1372769,13727,1715
 speck,840562,8405,1050
 tea,904731,9047,1130
