@@ -1,44 +1,37 @@
 {
  "PRESENT-80": {
-  "ns_blk": 3778.7,
-  "cyc_byte": 991.9,
-  "mbit": 16.9,
+  "ns_blk": 6006.3,
+  "cyc_byte": 1651.6,
+  "mbit": 10.7,
   "ram": 256,
   "rom": 481
  },
  "SPECK64/128": {
-  "ns_blk": 25.9,
-  "cyc_byte": 6.8,
-  "mbit": 2466.5,
+  "ns_blk": 64.7,
+  "cyc_byte": 17.8,
+  "mbit": 989.2,
   "ram": 108,
   "rom": 258
  },
  "SIMON64/128": {
-  "ns_blk": 83.4,
-  "cyc_byte": 21.9,
-  "mbit": 767.0,
+  "ns_blk": 161.7,
+  "cyc_byte": 44.5,
+  "mbit": 395.8,
   "ram": 176,
   "rom": 240
  },
  "TEA": {
-  "ns_blk": 115.4,
-  "cyc_byte": 30.3,
-  "mbit": 554.8,
+  "ns_blk": 147.9,
+  "cyc_byte": 40.7,
+  "mbit": 432.7,
   "ram": 16,
   "rom": 168
  },
  "XTEA": {
-  "ns_blk": 110.3,
-  "cyc_byte": 29.0,
-  "mbit": 580.0,
+  "ns_blk": 179.2,
+  "cyc_byte": 49.3,
+  "mbit": 357.1,
   "ram": 16,
   "rom": 189
- },
- "AES-128 (OpenSSL, AES-NI)": {
-  "ns_blk": 1.63,
-  "cyc_byte": null,
-  "mbit": 78577.8,
-  "ram": 176,
-  "rom": null
  }
 }

@@ -6,8 +6,10 @@ Code and raw results for the empirical evaluation in the manuscript
 > Resource Constrained IoT Devices: Design Principles, Efficiency Trade offs, Empirical
 > Evaluation, and Open Research Gaps" (manuscript under review).
 
-Every table and figure in the empirical section of the manuscript is produced by the scripts
-in this repository.
+The values in every table of the empirical section of the manuscript are produced by the
+scripts in this repository, and the result files hold the numbers that the tables report.
+The timing values stored here were measured on Linux 6.6.159, Intel Xeon CPU at 2.20 GHz,
+Python 3.13.18.
 
 ## Ciphers
 
@@ -53,7 +55,7 @@ relative path.
 | `software/experiments2.py` | SAC matrices, exact S-box differential and linear tables, statistical tests, key schedule diffusion, ECB and CBC image encryption |
 | `software/experiments3.py` | differential probability decay, minimum active S-box count for PRESENT, avalanche z-test, statistical battery with a biased control |
 | `software/experiments4.py` | pixel correlation and key sensitivity |
-| `software/figures.py` | the data figures |
+| `software/figures.py`, `software/figures_bench.py` | the timing, avalanche and round diffusion figures |
 | `hardware/exp_new.py`, `exp_new2.py`, `exp_new3.py` | the same security metrics for GIFT-64, PRINCE, LED-64, RECTANGLE-80 |
 
 ### Constrained-device measurements
